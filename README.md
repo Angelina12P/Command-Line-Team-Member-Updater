@@ -49,8 +49,9 @@ When a user decides to finish building their team, they exit the application and
 The application can be found here:
 ![Application URL](https://angelina12p.github.io/Command-Line-Team-Member-Updater/)
 
+
 This is a sample image of the working application's functionality:
-![Application Functionality](https://user-images.githubusercontent.com/117308737/223736881-9bbbe888-8dc9-41d7-aeae-9968617ec901.png)
+![Application Functionality](https://user-images.githubusercontent.com/117308737/223737420-b9e87169-5f2b-4527-937a-6fad095a7db2.png)
 
 ## Credits
 [node.js](https://nodejs.org/en/download) for the creation of te application
