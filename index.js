@@ -1,7 +1,8 @@
-const Manager = require("./src/modules/Manager");
-const Engineer = require("./src/modules/Engineer");
-const Intern = require("./src/modules/Intern");
+const Manager = require("./src/modules/Manager.js");
+const Engineer = require("./src/modules/Engineer.js");
+const Intern = require("./src/modules/Intern.js");
 const inquirer = require("inquirer");
+const Employee = require("./src/modules/Employee.js")
 const path = require("path");
 const fs = require("fs");
 const questions = require("./questions.js")
@@ -71,9 +72,10 @@ async function addIntern() {
 
 async function finishBuild(){
   let htmlDoc = render(team)
-  await fs.writeFile(outputPath, htmlDoc)
+  await fs.writeFile(outputPath, htmlDoc,(err) => {
+    if (err) throw err;
   console.log('Complete')
-}
+})}
 
 
 startProgram()
